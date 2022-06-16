@@ -1,0 +1,44 @@
+package student;
+
+class student {
+	 private String name; //hiding data
+	  private String course; //hiding data
+	  private int age;//hiding data
+
+	public String getName() {// getter method
+		return name;
+	}
+//setter methods
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCourse() {
+		return course;
+	}
+
+	public void setCourse(String course) {
+		this.course = course;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          
+		student s1=new student(); //creating object
+		s1.setName("Tom"); //set name
+		s1.setCourse("java");  //set course
+		s1.setAge(10);  //set age
+		System.out.println("my name is "+s1.getName()); // print and call the method
+		System.out.println("my course is "+s1.getCourse()); //print and call the methods
+		System.out.println("my age is"+s1.getAge()); //print and call the methods
+	}
+
+}

@@ -1,0 +1,29 @@
+package com.dxc.encapsulation;
+
+//Java Bean class
+public class BankAccount {
+    private double balance;
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        if (balance < 0) {
+            System.out.println("Do not enter negative value");
+        } else {
+            this.balance = balance;
+        }
+    }
+}
+
+class Clark {
+    public static void main(String[] args) {
+        BankAccount account = new BankAccount();
+        account.setBalance(-5000);
+        System.out.println(account.getBalance());
+        System.out.println();
+        account.setBalance(5000);
+        System.out.println(account.getBalance());
+    }
+}
